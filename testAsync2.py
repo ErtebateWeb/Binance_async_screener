@@ -36,7 +36,7 @@ def GetTradableSymbols():
         if pair['status'] == 'TRADING':
             if pair['quoteAsset'] == 'USDT':
                 if ("up" not in pair['symbol'].lower()) and ("down" not in pair['symbol'].lower()) and \
-                        ("busd" not in pair['symbol'].lower()) and ("tusd" not in pair['symbol'].lower()) and \
+                        ("busd" not in pair['symbol'].lower()) and ("usdc" not in pair['symbol'].lower()) and ("tusd" not in pair['symbol'].lower()) and \
                         ("pax" not in pair['symbol'].lower()):
                     symbol_list.append(pair['symbol'])
     return symbol_list
